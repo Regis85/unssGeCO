@@ -23,6 +23,8 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+import javax.swing.UIManager;
+import java.awt.Color;
 
 public class Fenetre {
 
@@ -32,7 +34,14 @@ public class Fenetre {
 	private JButton btnConnectEnCours;
 	private JButton btnArreteLecture;
 	
-	private JLabel lblPuce;
+	private JButton btnLanceAutoPuce;
+	private JButton btnConnexionAutoPuce;
+	private JButton btnArreteAutoPuce;
+	
+	public JLabel lblPuce;
+
+	public LecteurPuces lecteurPuce;
+	public LecteurPuces lecteurAutoPuce;
 	
 	/**
 	 * Launch the application.
@@ -78,22 +87,22 @@ public class Fenetre {
 		menuBar.add(mnFichier);
 		
 		JMenuItem mntmNouveau = new JMenuItem("Nouveau");
-		mntmNouveau.setIcon(new ImageIcon("C:\\Users\\Régis\\eclipse-workspace\\unssGeCO\\icones\\new.png"));
+		mntmNouveau.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/new.png")));
 		mntmNouveau.setEnabled(false);
 		mnFichier.add(mntmNouveau);
 		
 		JMenuItem mntmOuvrir = new JMenuItem("Ouvrir...");
-		mntmOuvrir.setIcon(new ImageIcon("C:\\Users\\Régis\\eclipse-workspace\\unssGeCO\\icones\\open.png"));
+		mntmOuvrir.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/open.png")));
 		mntmOuvrir.setEnabled(false);
 		mnFichier.add(mntmOuvrir);
 		
 		JMenuItem mntmEnregistrer = new JMenuItem("Enregistrer");
-		mntmEnregistrer.setIcon(new ImageIcon("C:\\Users\\Régis\\eclipse-workspace\\unssGeCO\\icones\\save.png"));
+		mntmEnregistrer.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/save.png")));
 		mntmEnregistrer.setEnabled(false);
 		mnFichier.add(mntmEnregistrer);
 		
 		JMenuItem mntmEnregistrerSous = new JMenuItem("Enregistrer sous...");
-		mntmEnregistrerSous.setIcon(new ImageIcon("C:\\Users\\Régis\\eclipse-workspace\\unssGeCO\\icones\\exportMenu.png"));
+		mntmEnregistrerSous.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/exportMenu.png")));
 		mntmEnregistrerSous.setEnabled(false);
 		mnFichier.add(mntmEnregistrerSous);
 		
@@ -101,7 +110,7 @@ public class Fenetre {
 		mnFichier.add(separator);
 		
 		JMenuItem mntmQuitter = new JMenuItem("Quitter");
-		mntmQuitter.setIcon(new ImageIcon("C:\\Users\\Régis\\eclipse-workspace\\unssGeCO\\icones\\exit.png"));
+		mntmQuitter.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/exit.png")));
 		mntmQuitter.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0) {
 				System.exit(0);
@@ -131,7 +140,7 @@ public class Fenetre {
 		btnEnregistrer.setToolTipText("Enregistrer");
 		//Enregistrer
 		btnEnregistrer.setPreferredSize(new Dimension(27,27));
-		btnEnregistrer.setIcon(new ImageIcon("C:\\Users\\Régis\\eclipse-workspace\\unssGeCO\\icones\\save32.png"));
+		btnEnregistrer.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/save32.png")));
 		tbSauve.add(btnEnregistrer);
 		
 		JButton btnExportEquipe = new JButton("");
@@ -140,7 +149,7 @@ public class Fenetre {
 		tbSauve.add(btnExportEquipe);
 		//Exporter les équipes en CSV
 		btnExportEquipe.setPreferredSize(new Dimension(27,27));
-		btnExportEquipe.setIcon(new ImageIcon("C:\\Users\\Régis\\eclipse-workspace\\unssGeCO\\icones\\export.png"));
+		btnExportEquipe.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/exportMenu.png")));
 		btnExportEquipe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
@@ -164,14 +173,14 @@ public class Fenetre {
 		btnSauvegardeAutomatique.setEnabled(false);
 		btnSauvegardeAutomatique.setToolTipText("Lancer la sauvegarde automatique");
 		btnSauvegardeAutomatique.setPreferredSize(new Dimension(27,27));
-		btnSauvegardeAutomatique.setIcon(new ImageIcon("C:\\Users\\Régis\\eclipse-workspace\\unssGeCO\\icones\\run.png"));
+		btnSauvegardeAutomatique.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/run.png")));
 		tbLanceLecture.add(btnSauvegardeAutomatique);
 		
 		pnlSauvegarde.setBorder(new TitledBorder(null, "", TitledBorder.LEFT, TitledBorder.DEFAULT_POSITION)); 
 		
 		JToolBar tbLecture = new JToolBar();
 		tbLecture.setToolTipText("Heure zéro et lecture des puces");
-		tbLecture.setBorder(new TitledBorder(null, "Puces", TitledBorder.LEFT, TitledBorder.TOP, null, null));
+		tbLecture.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "\u00C9preuve", TitledBorder.LEFT, TitledBorder.TOP, null, new Color(0, 0, 0)));
 		pnlSauvegarde.add(tbLecture);
 		
 		JComboBox cmbHeureDepart = new JComboBox();
@@ -179,6 +188,9 @@ public class Fenetre {
 		for(int i=0;i<24;i++) {
 			cmbHeureDepart.addItem(i);
 		}
+		
+		JLabel lblHeureZro = new JLabel("Heure zéro : ");
+		tbLecture.add(lblHeureZro);
 		tbLecture.add(cmbHeureDepart);
 		
 		JLabel lblHeDepart = new JLabel(" H ");
@@ -210,55 +222,129 @@ public class Fenetre {
 		});
 		btnLanceLecture.setToolTipText("Lancer la lecture des puces");
 		btnLanceLecture.setPreferredSize(new Dimension(27,27));
-		btnLanceLecture.setIcon(new ImageIcon("C:\\Users\\Régis\\eclipse-workspace\\unssGeCO\\icones\\play.png"));
+		btnLanceLecture.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/play.png")));
 		tbLecture.add(btnLanceLecture);
 		
-		btnConnectEnCours = new JButton("");
-		btnConnectEnCours.setPreferredSize(new Dimension(27, 27));
-		btnConnectEnCours.setIcon(new ImageIcon("C:\\Users\\Régis\\eclipse-workspace\\unssGeCO\\icones\\attente.png"));
-		tbLecture.add(btnConnectEnCours);
-		
 		btnArreteLecture = new JButton("");
+		btnArreteLecture.setToolTipText("Arrêter la lecture des puces");
 		btnArreteLecture.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				arreteLitPuces();
 			}
 		});
-		btnArreteLecture.setIcon(new ImageIcon("C:\\Users\\Régis\\eclipse-workspace\\unssGeCO\\icones\\stop.png"));
+		btnArreteLecture.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/stop.png")));
 		btnArreteLecture.setPreferredSize(new Dimension(27, 27));
 		btnArreteLecture.setSelectedIcon(null);
 		tbLecture.add(btnArreteLecture);
 		
+		btnConnectEnCours = new JButton("");
+		btnConnectEnCours.setToolTipText("Connexion en cours");
+		btnConnectEnCours.setPreferredSize(new Dimension(27, 27));
+		btnConnectEnCours.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/attente.png")));
+		tbLecture.add(btnConnectEnCours);
+		
 		lblPuce = new JLabel("puce");
 		frmCoUnss.getContentPane().add(lblPuce, BorderLayout.SOUTH);
-
+		
+		JPanel panel = new JPanel();
+		panel.setPreferredSize(new Dimension(200, 10));
+		panel.setBorder(new TitledBorder(null, "\u00C9quipes", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		frmCoUnss.getContentPane().add(panel, BorderLayout.WEST);
+		panel.setLayout(new BorderLayout(0, 0));
+		
+		JPanel panel_1 = new JPanel();
+		panel.add(panel_1, BorderLayout.NORTH);
+		panel_1.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		
+		JLabel lblAutoPuce = new JLabel("Auto puce :");
+		panel_1.add(lblAutoPuce);
+		
+		btnLanceAutoPuce = new JButton("");
+		btnLanceAutoPuce.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				litAutoPuces();
+			}
+		});
+		btnLanceAutoPuce.setPreferredSize(new Dimension(27, 27));
+		btnLanceAutoPuce.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/play.png")));
+		panel_1.add(btnLanceAutoPuce);
+		
+		btnArreteAutoPuce = new JButton("");
+		btnArreteAutoPuce.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				arreteAutoPuces();
+			}
+		});
+		btnArreteAutoPuce.setPreferredSize(new Dimension(27, 27));
+		btnArreteAutoPuce.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/stop.png")));
+		panel_1.add(btnArreteAutoPuce);
+		
+		btnConnexionAutoPuce = new JButton("");
+		btnConnexionAutoPuce.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/attente.png")));
+		btnConnexionAutoPuce.setPreferredSize(new Dimension(27, 27));
+		panel_1.add(btnConnexionAutoPuce);
 
 		afficheBouton(true,false,false);
+		afficheBoutonAutoPuce(true,false,false);
 		
 	}
-
-	/**
-	 * Démarre la lecture
-	 */
-	private void litPuces() {
-		lblPuce.setText("Connecté à la station");
-		afficheBouton(false,false,true);
-	}
 	
+	/**
+	 * Affiche ou cache les boutons d'état de la lecture des puces
+	 * 
+	 * @param pLit boolean bouton Lancer la lecture
+	 * @param pConnexion boolean bouton Connexion en cours
+	 * @param pArrete boolean bouton arrêter la lecture
+	 */
 	public void afficheBouton(boolean pLit, boolean pConnexion, boolean pArrete) {
 		btnLanceLecture.setVisible(pLit);
 		btnConnectEnCours.setVisible(pConnexion);
 		btnArreteLecture.setVisible(pArrete);
+		btnLanceAutoPuce.setEnabled(!(pArrete || pConnexion));
 	}
-	
 
 	/**
-	 * Démarre la lecture
+	 * Démarre la lecture des puces
+	 */
+	private void litPuces() {
+		lecteurPuce = new LitBalisesPuces(this);
+	}
+	
+	/**
+	 * Arrête la lecture des puces
 	 */
 	private void arreteLitPuces() {
-		lblPuce.setText("Déonnecté de la station");
-		afficheBouton(true,false,false);
+		lecteurPuce.arreteLecture();
 	}
+	
+	/**
+	 * Affiche ou cache les boutons d'état de auto puce
+	 * 
+	 * @param pLit boolean bouton Lancer la lecture
+	 * @param pConnexion boolean bouton Connexion en cours
+	 * @param pArrete boolean bouton arrêter la lecture
+	 */
+	public void afficheBoutonAutoPuce(boolean pLit, boolean pConnexion, boolean pArrete) {
+		btnLanceAutoPuce.setVisible(pLit);
+		btnConnexionAutoPuce.setVisible(pConnexion);
+		btnArreteAutoPuce.setVisible(pArrete);
+		btnLanceLecture.setEnabled(!(pArrete || pConnexion));
+	}
+
+	/**
+	 * Démarre la lecture de auto puce
+	 */
+	private void litAutoPuces() {
+		lecteurAutoPuce = new AutoPuce(this);
+	}
+	
+	/**
+	 * Arrête la lecture de auto puces
+	 */
+	private void arreteAutoPuces() {
+		lecteurAutoPuce.arreteLecture();
+	}
+	
 	
 
 }

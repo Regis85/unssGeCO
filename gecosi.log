@@ -1,0 +1,5650 @@
+###### 
+Tue Jul 25 10:07:35 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AE 0A 20 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 90 BF 8A 8D EA EA EA EA 36 02 93 FF 36 03 9F 4A 37 04 28 FD 00 9D 14 B8 02 20 30 AE 0C FF 93 64 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A BF 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 A2 2C 36 66 A3 8D 06 8E A4 D2 36 8D A7 08 06 8F A7 DE 37 6B 0B 37 37 6C 16 36 37 97 17 92 37 9E 18 AA 37 98 19 80 37 99 1A 31 37 9A 1B 14 37 9F 1B FD 37 A2 1E AC 37 A1 1F 19 37 A3 1F C4 37 9B 21 A0 37 9C 22 E4 37 A5 23 ED 37 9D 24 B7 EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE 92 86 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AE 52 01 03 
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AE 0A 20 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 90 BF 8A 8D EA EA EA EA 36 02 93 FF 36 03 9F 4A 37 04 28 FD 00 9D 14 B8 02 20 30 AE 0C FF 93 64 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A BF 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 A2 2C 36 66 A3 8D 06 8E A4 D2 36 8D A7 08 06 8F A7 DE 37 6B 0B 37 37 6C 16 36 37 97 17 92 37 9E 18 AA 37 98 19 80 37 99 1A 31 37 9A 1B 14 37 9F 1B FD 37 A2 1E AC 37 A1 1F 19 37 A3 1F C4 37 9B 21 A0 37 9C 22 E4 37 A5 23 ED 37 9D 24 B7 EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE 92 86 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Info] Timeout on SiCard removal
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AE 52 01 03 
+! PROCESSING
+[Debug] Late removal 02 E7 06 00 12 00 20 30 AE 52 01 03 
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 10:09:55 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+[Error] Invalid message: 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+! PROCESSING_ERROR
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:12:27 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 10:21:30 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:29:55 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 10:30:23 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 10:31:47 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:33:18 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 10:34:07 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:34:16 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:37:22 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:37:39 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:42:19 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 10:49:05 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:50:22 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:51:43 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:51:54 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:52:09 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:52:15 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:52:27 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 10:56:11 CEST 2017 Start COM3
+###### 
+Tue Jul 25 10:56:17 CEST 2017 Start COM3
+###### 
+Tue Jul 25 10:56:27 CEST 2017 Start COM3
+! OFF
+###### 
+Tue Jul 25 10:56:57 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 10:57:09 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 13:26:55 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:01:54 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:05:53 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 14:10:22 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 14:11:18 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:11:27 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:14:38 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:14:46 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:14:59 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:16:45 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:18:21 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:18:26 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:23:11 CEST 2017 Start COM3
+###### 
+Tue Jul 25 14:23:21 CEST 2017 Start COM3
+###### 
+Tue Jul 25 14:23:33 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 14:23:58 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:28:13 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:28:58 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:29:09 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:32:37 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:32:57 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 14:35:30 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 14:36:20 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 14:42:55 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:43:52 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AE 0A 20 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 90 BF 8A 8D EA EA EA EA 36 02 93 FF 36 03 9F 4A 37 04 28 FD 00 9D 14 B8 02 20 30 AE 0C FF 93 64 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A BF 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 A2 2C 36 66 A3 8D 06 8E A4 D2 36 8D A7 08 06 8F A7 DE 37 6B 0B 37 37 6C 16 36 37 97 17 92 37 9E 18 AA 37 98 19 80 37 99 1A 31 37 9A 1B 14 37 9F 1B FD 37 A2 1E AC 37 A1 1F 19 37 A3 1F C4 37 9B 21 A0 37 9C 22 E4 37 A5 23 ED 37 9D 24 B7 EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE 92 86 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AE 52 01 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:52:55 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AE 0A 20 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 90 BF 8A 8D EA EA EA EA 36 02 93 FF 36 03 9F 4A 37 04 28 FD 00 9D 14 B8 02 20 30 AE 0C FF 93 64 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A BF 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 A2 2C 36 66 A3 8D 06 8E A4 D2 36 8D A7 08 06 8F A7 DE 37 6B 0B 37 37 6C 16 36 37 97 17 92 37 9E 18 AA 37 98 19 80 37 99 1A 31 37 9A 1B 14 37 9F 1B FD 37 A2 1E AC 37 A1 1F 19 37 A3 1F C4 37 9B 21 A0 37 9C 22 E4 37 A5 23 ED 37 9D 24 B7 EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE 92 86 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AE 52 01 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:53:14 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Error] Master station did not answer to startup sequence (high/low baud)
+! OFF
+###### 
+Tue Jul 25 14:53:23 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AE 0A 20 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 90 BF 8A 8D EA EA EA EA 36 02 93 FF 36 03 9F 4A 37 04 28 FD 00 9D 14 B8 02 20 30 AE 0C FF 93 64 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A BF 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 A2 2C 36 66 A3 8D 06 8E A4 D2 36 8D A7 08 06 8F A7 DE 37 6B 0B 37 37 6C 16 36 37 97 17 92 37 9E 18 AA 37 98 19 80 37 99 1A 31 37 9A 1B 14 37 9F 1B FD 37 A2 1E AC 37 A1 1F 19 37 A3 1F C4 37 9B 21 A0 37 9C 22 E4 37 A5 23 ED 37 9D 24 B7 EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE 92 86 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AE 52 01 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:55:25 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:58:19 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AE 0A 20 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 90 BF 8A 8D EA EA EA EA 36 02 93 FF 36 03 9F 4A 37 04 28 FD 00 9D 14 B8 02 20 30 AE 0C FF 93 64 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A BF 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 A2 2C 36 66 A3 8D 06 8E A4 D2 36 8D A7 08 06 8F A7 DE 37 6B 0B 37 37 6C 16 36 37 97 17 92 37 9E 18 AA 37 98 19 80 37 99 1A 31 37 9A 1B 14 37 9F 1B FD 37 A2 1E AC 37 A1 1F 19 37 A3 1F C4 37 9B 21 A0 37 9C 22 E4 37 A5 23 ED 37 9D 24 B7 EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE 92 86 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AE 52 01 03 
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AE 0A 20 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 90 BF 8A 8D EA EA EA EA 36 02 93 FF 36 03 9F 4A 37 04 28 FD 00 9D 14 B8 02 20 30 AE 0C FF 93 64 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A BF 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 A2 2C 36 66 A3 8D 06 8E A4 D2 36 8D A7 08 06 8F A7 DE 37 6B 0B 37 37 6C 16 36 37 97 17 92 37 9E 18 AA 37 98 19 80 37 99 1A 31 37 9A 1B 14 37 9F 1B FD 37 A2 1E AC 37 A1 1F 19 37 A3 1F C4 37 9B 21 A0 37 9C 22 E4 37 A5 23 ED 37 9D 24 B7 EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE 92 86 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AE 52 01 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:58:41 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+###### 
+Tue Jul 25 14:59:15 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AE 0A 20 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 90 BF 8A 8D EA EA EA EA 36 02 93 FF 36 03 9F 4A 37 04 28 FD 00 9D 14 B8 02 20 30 AE 0C FF 93 64 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A BF 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 A2 2C 36 66 A3 8D 06 8E A4 D2 36 8D A7 08 06 8F A7 DE 37 6B 0B 37 37 6C 16 36 37 97 17 92 37 9E 18 AA 37 98 19 80 37 99 1A 31 37 9A 1B 14 37 9F 1B FD 37 A2 1E AC 37 A1 1F 19 37 A3 1F C4 37 9B 21 A0 37 9C 22 E4 37 A5 23 ED 37 9D 24 B7 EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE 92 86 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AE 52 01 03 
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AE 0A 20 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 90 BF 8A 8D EA EA EA EA 36 02 93 FF 36 03 9F 4A 37 04 28 FD 00 9D 14 B8 02 20 30 AE 0C FF 93 64 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A BF 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 A2 2C 36 66 A3 8D 06 8E A4 D2 36 8D A7 08 06 8F A7 DE 37 6B 0B 37 37 6C 16 36 37 97 17 92 37 9E 18 AA 37 98 19 80 37 99 1A 31 37 9A 1B 14 37 9F 1B FD 37 A2 1E AC 37 A1 1F 19 37 A3 1F C4 37 9B 21 A0 37 9C 22 E4 37 A5 23 ED 37 9D 24 B7 EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE 92 86 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AE 52 01 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 14:59:35 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AE 0A 20 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 90 BF 8A 8D EA EA EA EA 36 02 93 FF 36 03 9F 4A 37 04 28 FD 00 9D 14 B8 02 20 30 AE 0C FF 93 64 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A BF 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 A2 2C 36 66 A3 8D 06 8E A4 D2 36 8D A7 08 06 8F A7 DE 37 6B 0B 37 37 6C 16 36 37 97 17 92 37 9E 18 AA 37 98 19 80 37 99 1A 31 37 9A 1B 14 37 9F 1B FD 37 A2 1E AC 37 A1 1F 19 37 A3 1F C4 37 9B 21 A0 37 9C 22 E4 37 A5 23 ED 37 9D 24 B7 EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE 92 86 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AE 52 01 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 15:00:53 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 15:01:07 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+[Error] Invalid message: 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+! PROCESSING_ERROR
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 15:02:02 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 15:02:17 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 15:03:03 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 15:03:20 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 15:08:54 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 15:09:12 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AE 0A 20 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 90 BF 8A 8D EA EA EA EA 36 02 93 FF 36 03 9F 4A 37 04 28 FD 00 9D 14 B8 02 20 30 AE 0C FF 93 64 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A BF 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 A2 2C 36 66 A3 8D 06 8E A4 D2 36 8D A7 08 06 8F A7 DE 37 6B 0B 37 37 6C 16 36 37 97 17 92 37 9E 18 AA 37 98 19 80 37 99 1A 31 37 9A 1B 14 37 9F 1B FD 37 A2 1E AC 37 A1 1F 19 37 A3 1F C4 37 9B 21 A0 37 9C 22 E4 37 A5 23 ED 37 9D 24 B7 EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE 92 86 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AE 52 01 03 
+--> DISPATCH_READY
+! READY
+! OFF
+###### 
+Tue Jul 25 15:09:32 CEST 2017 Start COM3
+! STARTING
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+SEND FF 02 02 F0 01 4D 6D 0A 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 F0 03 00 12 4D 8D 78 03 
+SEND 02 83 02 74 01 04 14 03 
+--> CONFIG_CHECK
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 74 05 30 1B 03 
+SEND 02 83 02 33 01 16 11 03 
+--> SI6_CARDBLOCKS_SETTING
+[Debug] Fragment
+[Debug] Fragment
+READ 02 83 04 00 12 33 C1 A0 85 03 
+[Info] SiCard6 192 Punches Mode Disabled
+SEND 02 F9 01 02 14 0A 03 
+! ON
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+READ 02 F9 03 00 12 02 76 78 03 
+! PROCESSING
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AE 0A 20 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 90 BF 8A 8D EA EA EA EA 36 02 93 FF 36 03 9F 4A 37 04 28 FD 00 9D 14 B8 02 20 30 AE 0C FF 93 64 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A BF 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 A2 2C 36 66 A3 8D 06 8E A4 D2 36 8D A7 08 06 8F A7 DE 37 6B 0B 37 37 6C 16 36 37 97 17 92 37 9E 18 AA 37 98 19 80 37 99 1A 31 37 9A 1B 14 37 9F 1B FD 37 A2 1E AC 37 A1 1F 19 37 A3 1F C4 37 9B 21 A0 37 9C 22 E4 37 A5 23 ED 37 9D 24 B7 EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE 92 86 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AE 52 01 03 
+--> DISPATCH_READY
+! READY
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E8 06 00 12 02 20 30 AB 0A 3E 03 
+! PROCESSING
+--> RETRIEVE_SICARD_8_9_DATA
+SEND 02 EF 01 00 E2 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 00 15 DC 66 8E EA EA EA EA 36 02 93 F7 36 03 9E EB 37 04 25 59 00 9D 12 58 02 20 30 AB 0C FF A9 48 2E 3B 55 4E 53 53 20 56 65 6E 64 65 65 3B 00 00 49 44 3B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 03 03 
+SEND 02 EF 01 01 E3 09 03 
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 EF 83 00 12 01 00 00 00 00 00 00 00 00 36 67 9F 72 06 68 9F F7 36 66 A0 C1 07 8E 07 85 37 8D 08 EA 07 8F 09 8A 37 6B 0A 33 37 6C 15 0D 37 97 16 9D 37 9E 17 5F 37 98 18 60 37 99 19 79 37 9A 1A 45 37 9F 1B 73 37 9B 21 75 37 9C 22 80 37 A5 23 F6 37 9D 24 AD EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE EE E5 90 03 
+SEND 06 
+--> WAIT_SICARD_REMOVAL
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+[Debug] Fragment
+READ 02 E7 06 00 12 00 20 30 AB 52 1F 03 
+--> DISPATCH_READY
+! READY
+! OFF
