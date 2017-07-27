@@ -1,0 +1,5 @@
+bin
+bin/*
+.git
+.git/*
+gecosi.log
