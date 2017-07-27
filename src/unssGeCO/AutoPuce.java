@@ -30,7 +30,7 @@ public class AutoPuce extends LecteurPuces {
 	protected void afficheDonnees(SiDataFrame dataFrame) {
 		String serie = dataFrame.getSiSeries();
 		String numPuce = dataFrame.getSiNumber();
-		maFenetre.lblPuce.setText("Puce -> série " + serie + " : " + numPuce);
+		maFenetre.setLblPuce("Puce -> série " + serie + " : " + numPuce);
 	}
 
 }

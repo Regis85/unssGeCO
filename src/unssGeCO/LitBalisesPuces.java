@@ -39,7 +39,7 @@ public class LitBalisesPuces extends LecteurPuces {
 		if(nbTemps > 1) 
 			balises += "s";
 		balises += " ";
-		maFenetre.lblPuce.setText("Puce -> série " + serie + " : " + numPuce + " - " + nbTemps + balises);
+		maFenetre.setLblPuce("Puce -> série " + serie + " : " + numPuce + " - " + nbTemps + balises);
 	}
 
 }

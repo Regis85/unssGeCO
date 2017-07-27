@@ -3,11 +3,16 @@ package unssGeCO;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.Arrays;
+import java.util.Vector;
 
 import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JSeparator;
 import javax.swing.JPanel;
 import java.awt.BorderLayout;
@@ -15,6 +20,7 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import javax.swing.JToolBar;
 import javax.swing.border.TitledBorder;
+import javax.swing.table.DefaultTableModel;
 
 import gnu.io.CommPortIdentifier;
 
@@ -25,23 +31,46 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.Rectangle;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.BevelBorder;
+import java.awt.GridBagLayout;
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
+import javax.swing.JTextField;
+import javax.swing.JTable;
+import javax.swing.BoxLayout;
 
 public class Fenetre {
 
-	private JFrame frmCoUnss;
+	protected JFrame frmCoUnss;
 	
-	private JButton btnLanceLecture;
-	private JButton btnConnectEnCours;
-	private JButton btnArreteLecture;
+	protected JButton btnLanceLecture;
+	protected JButton btnConnectEnCours;
+	protected JButton btnArreteLecture;
 	
-	private JButton btnLanceAutoPuce;
-	private JButton btnConnexionAutoPuce;
-	private JButton btnArreteAutoPuce;
+	protected JButton btnLanceAutoPuce;
+	protected JButton btnConnexionAutoPuce;
+	protected JButton btnArreteAutoPuce;
 	
-	public JLabel lblPuce;
+	protected JPanel panelEquipes;
+	
+	protected JLabel lblPuce;
 
-	public LecteurPuces lecteurPuce;
-	public LecteurPuces lecteurAutoPuce;
+	protected LecteurPuces lecteurPuce;
+	protected LecteurPuces lecteurAutoPuce;
+	
+	protected int nbEquipes;
+	
+	protected String[] categorie = {"Collège", "Lycée"};
+	
+	protected Vector<Equipe> equipes = new Vector<Equipe>();
+	private String equipeChoisie;
+	
+	final int arrive = 1;
+	final int abandon = 2;
+	final int dsq = 3;
 	
 	/**
 	 * Launch the application.
@@ -73,7 +102,7 @@ public class Fenetre {
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void initialize() {
+	protected void initialize() {
 		frmCoUnss = new JFrame();
 		frmCoUnss.getContentPane().setEnabled(false);
 		frmCoUnss.setTitle("C.O. UNSS");
@@ -247,14 +276,44 @@ public class Fenetre {
 		frmCoUnss.getContentPane().add(lblPuce, BorderLayout.SOUTH);
 		
 		JPanel panel = new JPanel();
-		panel.setPreferredSize(new Dimension(200, 10));
+		panel.setPreferredSize(new Dimension(400, 10));
 		panel.setBorder(new TitledBorder(null, "\u00C9quipes", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		frmCoUnss.getContentPane().add(panel, BorderLayout.WEST);
 		panel.setLayout(new BorderLayout(0, 0));
 		
 		JPanel panel_1 = new JPanel();
+		panel_1.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		panel.add(panel_1, BorderLayout.NORTH);
 		panel_1.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		
+		JLabel lblequipes = new JLabel(getLblEquipes());
+		panel_1.add(lblequipes);
+		
+		JButton btnAjouteEquipe = new JButton("");
+		btnAjouteEquipe.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				addEquipe();
+			}
+		});
+		btnAjouteEquipe.setPreferredSize(new Dimension(27, 27));
+		btnAjouteEquipe.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/plus.png")));
+		panel_1.add(btnAjouteEquipe);
+		
+		JButton btnModifieEquipe = new JButton("");
+		btnModifieEquipe.setPreferredSize(new Dimension(27, 27));
+		btnModifieEquipe.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/find.png")));
+		panel_1.add(btnModifieEquipe);
+		
+		JButton btnSupprimeBouton = new JButton("");
+		btnSupprimeBouton.setToolTipText("Supprimer l'équipe sélectionnée");
+		btnSupprimeBouton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				effaceEquipe();
+			}
+		});
+		btnSupprimeBouton.setPreferredSize(new Dimension(27, 27));
+		btnSupprimeBouton.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/delete.png")));
+		panel_1.add(btnSupprimeBouton);
 		
 		JLabel lblAutoPuce = new JLabel("Auto puce :");
 		panel_1.add(lblAutoPuce);
@@ -283,7 +342,13 @@ public class Fenetre {
 		btnConnexionAutoPuce.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/attente.png")));
 		btnConnexionAutoPuce.setPreferredSize(new Dimension(27, 27));
 		panel_1.add(btnConnexionAutoPuce);
-
+		
+		panelEquipes = new JPanel();
+		panelEquipes.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		panelEquipes.setBackground(Color.WHITE);
+		panel.add(panelEquipes, BorderLayout.CENTER);
+		panelEquipes.setLayout(new BoxLayout(panelEquipes, BoxLayout.Y_AXIS));
+		
 		afficheBouton(true,false,false);
 		afficheBoutonAutoPuce(true,false,false);
 		
@@ -306,14 +371,14 @@ public class Fenetre {
 	/**
 	 * Démarre la lecture des puces
 	 */
-	private void litPuces() {
+	protected void litPuces() {
 		lecteurPuce = new LitBalisesPuces(this);
 	}
 	
 	/**
 	 * Arrête la lecture des puces
 	 */
-	private void arreteLitPuces() {
+	protected void arreteLitPuces() {
 		lecteurPuce.arreteLecture();
 	}
 	
@@ -334,17 +399,153 @@ public class Fenetre {
 	/**
 	 * Démarre la lecture de auto puce
 	 */
-	private void litAutoPuces() {
+	protected void litAutoPuces() {
 		lecteurAutoPuce = new AutoPuce(this);
 	}
 	
 	/**
 	 * Arrête la lecture de auto puces
 	 */
-	private void arreteAutoPuces() {
+	protected void arreteAutoPuces() {
 		lecteurAutoPuce.arreteLecture();
 	}
 	
+	public void setLblPuce(String pLblPuce) {
+		lblPuce.setText(pLblPuce);
+	}
 	
+	protected String getLblEquipes() {
+		nbEquipes = equipes.size();
+		String retour = nbEquipes + " équipe";
+		retour = nbEquipes > 1 ? retour + "s " : retour + " ";
+		return retour;
+	}
+	
+	public void ajouteUneEquipe(Equipe pNewEquipe) {
+		equipes.add(pNewEquipe);
+	}
+	
+	public boolean equipeConnue(String nomEquipe) {
+		boolean retour = false;
+		for (Equipe eq : equipes) {
+			if(eq.getNomEquipe().equals(nomEquipe)) {
+				System.out.println("L'équipe " + eq.getNomEquipe() + " est connue");
+				retour = true;
+				break;
+			}
+		}
+		return retour;
+	}
+		
+	/**
+	 * vérifie si une valeur est dans un tableau
+	 * 
+	 * @param arr String[] Le tableau de valeurs possible
+	 * @param targetValue String La valeur recherchée
+	 * @return
+	 */
+	protected static boolean in_array(String[] arr, String targetValue) {
+		return Arrays.asList(arr).contains(targetValue);
+	}
+	
+	protected void addEquipe() {
+		try {
+			System.out.println("avant " + equipes.size() + " équipes");
+			AjouteEquipe frame = new AjouteEquipe(this);
+			int nbEquipe = equipes.size();
+			frame.setModal(true);
+			frame.setLocationRelativeTo(null);
+			frame.setVisible(true);
+			System.out.println("retour " + equipes.size() + " équipes");
+			if(equipes.size() > nbEquipe) {
+				afficheEquipes();
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	protected void afficheEquipes() {
+		panelEquipes.removeAll();
+		panelEquipes.updateUI();
+		if (equipes.size() > 0) {
+			System.out.println("On affiche");
+			for(Equipe equipe : equipes) {
+				afficheEquipe(equipe);
+			}
+		} else {
+			System.out.println("Rien à afficher");
+			panelEquipes.removeAll();
+		}
+	}
+	
+	protected void afficheEquipe(Equipe pEquipe) {
+		String contenuLbl = pEquipe.getCategorie() + " - " + pEquipe.getDossard() + " - " + pEquipe.getNomEquipe();
+		for(Coureur coureur : pEquipe.getCoureurs()) {
+			contenuLbl += " - " + coureur.getNom() + " " + coureur.getPrenom() + " " + coureur.getPuce();
+		}
+		JLabel lblNewEquipe = new JLabel(contenuLbl);
+		lblNewEquipe.setOpaque(true);
+		
+		lblNewEquipe.setBackground(Color.WHITE);
+		if (pEquipe.getAbsent()) {
+			lblNewEquipe.setBackground(Color.YELLOW);
+			contenuLbl = "AB - " + contenuLbl;
+			lblNewEquipe.setText(contenuLbl);
+		}
+		if (pEquipe.getDsq()) {
+			lblNewEquipe.setBackground(Color.ORANGE);
+			contenuLbl = "DSQ - " + contenuLbl;
+			lblNewEquipe.setText(contenuLbl);
+		}
+		if (pEquipe.getArrive()) {
+			lblNewEquipe.setBackground(Color.GREEN);
+		}
+		if (pEquipe.getArrive() && pEquipe.getDsq()) {
+			lblNewEquipe.setBackground(Color.BLUE);
+		}
+		
+		
+		lblNewEquipe.setToolTipText(contenuLbl);
+		
+		lblNewEquipe.setPreferredSize(new Dimension(400, 14));
+		lblNewEquipe.setMaximumSize(new Dimension(400, 14));
+		
+		if (pEquipe.getNomEquipe().equals(equipeChoisie)) {
+			lblNewEquipe.setForeground(Color.RED);
+		}
+		
+		lblNewEquipe.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Vous avez clické " + pEquipe.getNomEquipe());
+                equipeChoisie = pEquipe.getNomEquipe();
+                afficheEquipes();
+            }
+
+        });
+		
+		panelEquipes.add(lblNewEquipe);
+		panelEquipes.updateUI();
+	}
+	
+	protected void effaceEquipe() {
+		System.out.println("Suppression de " + equipeChoisie + " nombre d'Equipe " + equipes.size());
+		for(Equipe eqActive : equipes) {
+			if (eqActive.getNomEquipe().equals(equipeChoisie)) {
+				String message = "Êtes-vous sûr de vouloir supprimer " + eqActive.getNomEquipe() + ". \nCette action est irréversible.";
+				int dialogResult = JOptionPane.showConfirmDialog (null, message,"ATTENTION",JOptionPane.YES_NO_OPTION);
+				if(dialogResult == JOptionPane.YES_OPTION){
+					equipes.removeElement(eqActive);
+					equipeChoisie = null;
+				}
+                break;
+			}
+		}
+		System.out.println("nombre d'Equipe " + equipes.size());
+		afficheEquipes();
+	}
+
 
 }
