@@ -17,12 +17,14 @@ public class Equipe {
 	public Equipe() {
 		// TODO Auto-generated constructor stub
 		for (int i=0;i<4;i++) coureurs[i] = new Coureur("", "", "", "");
+		/*
 		etablissement = "Collège Beaussire";
 		ville = "Luçon";
 		nomEquipe = "Beaussire 1";
 		dossard = "1";
 		categorie = "Collège";
 		coureurs[0] = new Coureur("Bouguin", "Régis", "G", "2109614");
+		*/
 	}
 	
 	public Coureur[] getCoureurs() {

@@ -50,7 +50,7 @@ public class AjouteEquipe extends JDialog {
 	protected JTextField txtEtablissement;
 	protected JTextField txtVille;
 	
-	protected Equipe equipe= new Equipe();
+	protected Equipe equipe;
 	protected JCheckBox chckbxDisqualifie;
 	protected JPanel panel;
 	protected JLabel lblAutoPuce;
@@ -81,13 +81,16 @@ public class AjouteEquipe extends JDialog {
 	}
 	 */
 	
-/*
-	public AjouteEquipe() {
-		initialiseEquipe();
-	}
-*/
 	public AjouteEquipe(Fenetre pFenetre) {
 		maFenetre = pFenetre;
+		equipe = new Equipe();
+		initialiseEquipe();
+	}
+
+	public AjouteEquipe(Fenetre pFenetre, int pIndex) {
+		maFenetre = pFenetre;
+		equipe = maFenetre.getEquipe().get(pIndex);
+		modifie = true;
 		initialiseEquipe();
 	}
 
@@ -223,11 +226,6 @@ public class AjouteEquipe extends JDialog {
 		cbxCategorie = new JComboBox<String>();
 		for (String cat : Categories) {
 			cbxCategorie.addItem(cat);
-			/*
-			if (cat.equals()) {
-				.
-			}
-			*/
 		}
 		cbxCategorie.setSelectedItem(equipe.getCategorie());
 		
@@ -417,10 +415,17 @@ public class AjouteEquipe extends JDialog {
 		equipe.setEtablissement(txtEtablissement.getText());
 		equipe.setVille(txtVille.getText());
 		equipe.setNomEquipe(txtNom.getText());
+		equipe.setDossard(txtDossard.getText());
 		equipe.setNonClasse(chckbxNonClasse.isSelected());
 		equipe.setAbsent(chckbxAbsentOuAbandon.isSelected());
 		equipe.setDsq(chckbxDisqualifie.isSelected());
-		equipe.setCategorie(cbxCategorie.getSelectedItem().toString());
+		if (cbxCategorie.getSelectedIndex() == -1) {
+			JOptionPane.showMessageDialog(null, "L'équipe doit avoir une catégorie", "Attention", JOptionPane.ERROR_MESSAGE);
+			return;
+		} else {
+			equipe.setCategorie(cbxCategorie.getSelectedItem().toString());
+		}
+		
 		if (equipe.getNomEquipe().length() < 1) {
 			JOptionPane.showMessageDialog(null, "L'équipe doit avoir un nom", "Attention", JOptionPane.ERROR_MESSAGE);
 		} else {
@@ -431,6 +436,8 @@ public class AjouteEquipe extends JDialog {
 				equipe.coureurs[i].setPuce(tableCoureurs.getModel().getValueAt(i, 3).toString());			
 			}			
 			if (modifie) {
+				//maFenetre.modifieUneEquipe(equipe);
+				this.dispose();	
 				
 			} 
 			else if (!maFenetre.equipeConnue(equipe.getNomEquipe())){

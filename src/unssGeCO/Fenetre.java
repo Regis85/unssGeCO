@@ -14,11 +14,13 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JSeparator;
+import javax.swing.JSpinner;
 import javax.swing.JPanel;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import javax.swing.JToolBar;
+import javax.swing.SpinnerNumberModel;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 
@@ -183,13 +185,10 @@ public class Fenetre {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		
-		JComboBox comboBoxMinutes = new JComboBox();
+
+		JSpinner comboBoxMinutes = new JSpinner(new SpinnerNumberModel(0, 0, 59, 1));
 		comboBoxMinutes.setEnabled(false);
 		comboBoxMinutes.setToolTipText("Sauvegarde automatique toutes les ...");
-		for(int i=1;i<60;i++) {
-			comboBoxMinutes.addItem(i);
-		}
 		tbLanceLecture.add(comboBoxMinutes);
 		
 		JLabel lblMn = new JLabel("MN");
@@ -212,11 +211,9 @@ public class Fenetre {
 		tbLecture.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "\u00C9preuve", TitledBorder.LEFT, TitledBorder.TOP, null, new Color(0, 0, 0)));
 		pnlSauvegarde.add(tbLecture);
 		
-		JComboBox cmbHeureDepart = new JComboBox();
+		JSpinner cmbHeureDepart = new JSpinner(new SpinnerNumberModel(0, 0, 24, 1));
 		cmbHeureDepart.setToolTipText("Heure zéro");
-		for(int i=0;i<24;i++) {
-			cmbHeureDepart.addItem(i);
-		}
+		cmbHeureDepart.setPreferredSize(new Dimension(45, 20));
 		
 		JLabel lblHeureZro = new JLabel("Heure zéro : ");
 		tbLecture.add(lblHeureZro);
@@ -226,11 +223,9 @@ public class Fenetre {
 		lblHeDepart.setLabelFor(cmbHeureDepart);
 		tbLecture.add(lblHeDepart);
 		
-		JComboBox cmbMinDepart = new JComboBox();
+		JSpinner cmbMinDepart = new JSpinner(new SpinnerNumberModel(0, 0, 59, 1));
 		cmbMinDepart.setToolTipText("Minute zéro");
-		for(int i=0;i<60;i++) {
-			cmbMinDepart.addItem(i);
-		}
+		cmbMinDepart.setPreferredSize(new Dimension(45, 20));
 		tbLecture.add(cmbMinDepart);
 		
 		JLabel lblMinDepart = new JLabel(" MN ");
@@ -290,17 +285,24 @@ public class Fenetre {
 		panel_1.add(lblequipes);
 		
 		JButton btnAjouteEquipe = new JButton("");
+		btnAjouteEquipe.setToolTipText("Ajouter une équipe");
 		btnAjouteEquipe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				addEquipe();
 			}
 		});
-		btnAjouteEquipe.setPreferredSize(new Dimension(27, 27));
+		btnAjouteEquipe.setPreferredSize(new Dimension(32, 32));
 		btnAjouteEquipe.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/plus.png")));
 		panel_1.add(btnAjouteEquipe);
 		
 		JButton btnModifieEquipe = new JButton("");
-		btnModifieEquipe.setPreferredSize(new Dimension(27, 27));
+		btnModifieEquipe.setToolTipText("Modifier l'équipe sélectionnée");
+		btnModifieEquipe.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				modifieEquipe();
+			}
+		});
+		btnModifieEquipe.setPreferredSize(new Dimension(32, 32));
 		btnModifieEquipe.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/find.png")));
 		panel_1.add(btnModifieEquipe);
 		
@@ -311,9 +313,25 @@ public class Fenetre {
 				effaceEquipe();
 			}
 		});
-		btnSupprimeBouton.setPreferredSize(new Dimension(27, 27));
+		btnSupprimeBouton.setPreferredSize(new Dimension(32, 32));
 		btnSupprimeBouton.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/delete.png")));
 		panel_1.add(btnSupprimeBouton);
+		
+		JButton btnAutodossard = new JButton("");
+		btnAutodossard.setToolTipText("Attribuer des numéros de dossard automatiquement");
+		btnAutodossard.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				InitialiseDossards autoDossards = new InitialiseDossards(equipes);
+				autoDossards.setModal(true);
+				autoDossards.setLocationRelativeTo(null);
+				autoDossards.setVisible(true);
+				afficheEquipes();
+			}
+		});
+		
+		btnAutodossard.setPreferredSize(new Dimension(32, 32));
+		btnAutodossard.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/dossard.png")));
+		panel_1.add(btnAutodossard);
 		
 		JLabel lblAutoPuce = new JLabel("Auto puce :");
 		panel_1.add(lblAutoPuce);
@@ -344,6 +362,7 @@ public class Fenetre {
 		panel_1.add(btnConnexionAutoPuce);
 		
 		panelEquipes = new JPanel();
+		panelEquipes.setToolTipText("Attribuer des dossards");
 		panelEquipes.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		panelEquipes.setBackground(Color.WHITE);
 		panel.add(panelEquipes, BorderLayout.CENTER);
@@ -414,6 +433,10 @@ public class Fenetre {
 		lblPuce.setText(pLblPuce);
 	}
 	
+	public Vector<Equipe> getEquipe(){
+		return equipes;
+	}
+	
 	protected String getLblEquipes() {
 		nbEquipes = equipes.size();
 		String retour = nbEquipes + " équipe";
@@ -470,7 +493,7 @@ public class Fenetre {
 		panelEquipes.removeAll();
 		panelEquipes.updateUI();
 		if (equipes.size() > 0) {
-			System.out.println("On affiche");
+			System.out.println("On affiche les équipes");
 			for(Equipe equipe : equipes) {
 				afficheEquipe(equipe);
 			}
@@ -505,7 +528,6 @@ public class Fenetre {
 		if (pEquipe.getArrive() && pEquipe.getDsq()) {
 			lblNewEquipe.setBackground(Color.BLUE);
 		}
-		
 		
 		lblNewEquipe.setToolTipText(contenuLbl);
 		
@@ -546,6 +568,37 @@ public class Fenetre {
 		System.out.println("nombre d'Equipe " + equipes.size());
 		afficheEquipes();
 	}
+	
+	protected void modifieEquipe() {
 
+		try {
+			System.out.println("modification de " + equipeChoisie + " -> " + equipes.size() + " équipes");
+			
+			for(Equipe modifieEquipe : equipes) {
+				if (modifieEquipe.getNomEquipe().equals(equipeChoisie)) {
+					AjouteEquipe frame = new AjouteEquipe(this, equipes.indexOf(modifieEquipe));
+					System.out.println("dossard " + modifieEquipe.getDossard());
+					frame.setModal(true);
+					frame.setLocationRelativeTo(null);
+					frame.setVisible(true);
+					break;
+				}
+			}
+			afficheEquipes();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	protected void modifieUneEquipe(Equipe pEquipe) {
+		for(Equipe modifieEquipe : equipes) {
+			if (modifieEquipe.getNomEquipe().equals(pEquipe)) {
+				
+			}
+		}
+	}
 
+	
+	
 }

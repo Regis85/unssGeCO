@@ -2,6 +2,8 @@ package unssGeCO;
 
 import java.util.Arrays;
 
+import javax.swing.JOptionPane;
+
 public class Coureur {
 	
 	protected String nom;
@@ -41,6 +43,8 @@ public class Coureur {
 		pSexe = pSexe.toUpperCase();
 		if(in_array(bonSexes, pSexe)) {
 			sexe = pSexe;
+		} else if (!pSexe.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "Le sexe ne peut être que F pour fille ou G pour garçon", "Attention", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 	
