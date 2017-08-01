@@ -83,7 +83,7 @@ public class AjouteEquipe extends JDialog {
 	
 	public AjouteEquipe(Fenetre pFenetre) {
 		maFenetre = pFenetre;
-		equipe = new Equipe();
+		equipe = new Equipe(maFenetre.getPreferences());
 		initialiseEquipe();
 	}
 
@@ -412,6 +412,7 @@ public class AjouteEquipe extends JDialog {
 	}
 	
 	public void retourneEquipe() {
+		System.out.println("cette équipe a pour id : " + equipe.getId());
 		equipe.setEtablissement(txtEtablissement.getText());
 		equipe.setVille(txtVille.getText());
 		equipe.setNomEquipe(txtNom.getText());

@@ -7,7 +7,7 @@
     <property name="dir.workspace" value="${dir.buildfile}/.."/>
     <property name="dir.jarfile" value="${dir.buildfile}"/>
     <target name="create_run_jar">
-        <jar destfile="${dir.jarfile}/guiGecoSi.jar" filesetmanifest="mergewithoutmain">
+        <jar destfile="${dir.jarfile}/unssGeCO.jar" filesetmanifest="mergewithoutmain">
             <manifest>
                 <attribute name="Main-Class" value="unssGeCO.Main"/>
                 <attribute name="Class-Path" value="."/>
@@ -16,6 +16,8 @@
             <fileset dir="${dir.jarfile}/lib"/>
             <zipfileset excludes="META-INF/*.SF" src="${dir.jarfile}/lib/GecoSI.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="${dir.jarfile}/lib/RXTXcomm.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.jarfile}/jgoodies-forms-1.8.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.jarfile}/miglayout15-swing.jar"/>
         </jar>
     </target>
 </project>

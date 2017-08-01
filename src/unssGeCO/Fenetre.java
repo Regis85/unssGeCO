@@ -5,6 +5,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.File;
+import java.io.FileReader;
 import java.util.Arrays;
 import java.util.Vector;
 
@@ -24,6 +26,7 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 
+import au.com.bytecode.opencsv.CSVReader;
 import gnu.io.CommPortIdentifier;
 
 import javax.swing.ImageIcon;
@@ -40,6 +43,8 @@ import javax.swing.border.BevelBorder;
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
+import java.awt.List;
+
 import javax.swing.JTextField;
 import javax.swing.JTable;
 import javax.swing.BoxLayout;
@@ -47,6 +52,8 @@ import javax.swing.BoxLayout;
 public class Fenetre {
 
 	protected JFrame frmCoUnss;
+	
+	protected int newId;
 	
 	protected JButton btnLanceLecture;
 	protected JButton btnConnectEnCours;
@@ -69,6 +76,8 @@ public class Fenetre {
 	
 	protected Vector<Equipe> equipes = new Vector<Equipe>();
 	private String equipeChoisie;
+	
+	private Preferences preferences = new Preferences();
 	
 	final int arrive = 1;
 	final int abandon = 2;
@@ -333,6 +342,17 @@ public class Fenetre {
 		btnAutodossard.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/dossard.png")));
 		panel_1.add(btnAutodossard);
 		
+		JButton btnImportecsv = new JButton("");
+		btnImportecsv.setToolTipText("Importer les équipes à partir d'un fichier CSV");
+		btnImportecsv.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				importeEquipe();
+			}
+		});
+		btnImportecsv.setPreferredSize(new Dimension(32, 32));
+		btnImportecsv.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/import.png")));
+		panel_1.add(btnImportecsv);
+		
 		JLabel lblAutoPuce = new JLabel("Auto puce :");
 		panel_1.add(lblAutoPuce);
 		
@@ -437,7 +457,7 @@ public class Fenetre {
 		return equipes;
 	}
 	
-	protected String getLblEquipes() {
+	public String getLblEquipes() {
 		nbEquipes = equipes.size();
 		String retour = nbEquipes + " équipe";
 		retour = nbEquipes > 1 ? retour + "s " : retour + " ";
@@ -458,6 +478,10 @@ public class Fenetre {
 			}
 		}
 		return retour;
+	}
+	
+	public Preferences getPreferences() {
+		return preferences;
 	}
 		
 	/**
@@ -534,7 +558,7 @@ public class Fenetre {
 		lblNewEquipe.setPreferredSize(new Dimension(400, 14));
 		lblNewEquipe.setMaximumSize(new Dimension(400, 14));
 		
-		if (pEquipe.getNomEquipe().equals(equipeChoisie)) {
+		if (equipeChoisie !=null && pEquipe.getNomEquipe().equals(equipeChoisie)) {
 			lblNewEquipe.setForeground(Color.RED);
 		}
 		
@@ -597,6 +621,12 @@ public class Fenetre {
 				
 			}
 		}
+	}
+	
+	protected void importeEquipe() {
+		//File initialFile = new File("C:\\Users\\Régis\\eclipse-workspace\\unssGeCO\\lib\\test\\ressources\\chien-test-01.csv");
+		new ImportCSVEquipe(equipes);
+		afficheEquipes();
 	}
 
 	

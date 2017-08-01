@@ -1,30 +1,55 @@
 package unssGeCO;
 
+import java.util.Arrays;
+
 public class Equipe {
-	
+
+	protected int idEquipe;
 	protected String etablissement;
 	protected String ville;
 	protected String nomEquipe;
-	protected String dossard;
+	protected String dossard = "";
 	protected boolean nonClasse = false;
 	protected boolean dsq = false;
 	protected boolean absent = false;
 	protected boolean arrive = false;
 	protected String categorie;
 	
+
+	protected Preferences preferences;
+	
 	protected Coureur[] coureurs = new Coureur[4];
 
-	public Equipe() {
-		// TODO Auto-generated constructor stub
+	public Equipe( Preferences pPreferences) {
+
+		preferences = pPreferences;
+		
+		idEquipe = preferences.getIdSuivant();
 		for (int i=0;i<4;i++) coureurs[i] = new Coureur("", "", "", "");
-		/*
-		etablissement = "Collège Beaussire";
-		ville = "Luçon";
-		nomEquipe = "Beaussire 1";
-		dossard = "1";
-		categorie = "Collège";
-		coureurs[0] = new Coureur("Bouguin", "Régis", "G", "2109614");
-		*/
+	}
+
+	public Equipe(String[] pNewEquipe, Preferences pPreferences) {
+
+		preferences = pPreferences;
+
+		System.out.println("on construit");
+		idEquipe = preferences.getIdSuivant();
+		etablissement = pNewEquipe[0];
+		ville = pNewEquipe[1];
+		nomEquipe = pNewEquipe[2];
+		categorie = pNewEquipe[3];
+		for(int i=0;i<4;i++) {
+			coureurs[i] = new Coureur( pNewEquipe[4+(4*i)], pNewEquipe[5+(4*i)], pNewEquipe[6+(4*i)], pNewEquipe[7+(4*i)]);			
+		}
+		System.out.println("on finit de construire " + idEquipe);
+	}
+	
+	public int getId() {
+		return idEquipe;
+	}
+	
+	public void setId(int pId) {
+		idEquipe = pId;
 	}
 	
 	public Coureur[] getCoureurs() {
