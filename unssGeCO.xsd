@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="unssGeCO">
+    	<xs:complexType>
+   			<xs:sequence>
+				<xs:element ref="version" />
+   				<xs:element ref="preferences" minOccurs="0" />
+   				<xs:element ref="equipes" minOccurs="0" />
+   				<xs:element ref="epreuves" minOccurs="0" />
+   				<xs:element ref="tempss" minOccurs="0" />
+   			</xs:sequence>
+   		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="version" type="xs:string" />
+	
+	<xs:element name="preferences">
+    	<xs:complexType>
+   			<xs:sequence>
+				<xs:element ref="baliseDefaut" minOccurs="0" />
+   			</xs:sequence>
+   		</xs:complexType>
+	</xs:element>
+	<xs:element name="baliseDefaut">
+    	<xs:complexType>
+   			<xs:sequence>
+   				<xs:element name="code" type="xs:int" />
+   				<xs:element name="trouveBonif" type="xs:boolean" />
+   				<xs:element name="trouvePoints" type="xs:int" />
+   				<xs:element name="trouveHeure" type="xs:time" />
+   				<xs:element name="pmBonif" type="xs:boolean" />
+   				<xs:element name="pmPoints" type="xs:int" />
+   				<xs:element name="pmHeure" type="xs:time" />
+   			</xs:sequence>
+   		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="equipes">
+    	<xs:complexType>
+   			<xs:sequence>
+				<xs:element ref="equipe" minOccurs="0" maxOccurs="unbounded" />
+   			</xs:sequence>
+   		</xs:complexType>	
+	</xs:element>
+	
+	<xs:element name="equipe">
+    	<xs:complexType>
+	    	<xs:sequence>
+	    		<xs:element name="nom" type="xs:string" />
+	    		<xs:element ref="coureurs" minOccurs="0" />
+	    	</xs:sequence>
+			<xs:attribute name="id" type="xs:string" />
+			<xs:attribute name="nom" type="xs:string" />
+			<xs:attribute name="dossard" type="xs:string" />
+ 			<xs:attribute name="etablissement" type="xs:string" />
+ 			<xs:attribute name="ville" type="xs:string" />
+ 			<xs:attribute name="nonClasse" type="xs:boolean" />
+ 			<xs:attribute name="absent" type="xs:boolean" />
+ 			<xs:attribute name="dsq" type="xs:boolean" />
+ 			<xs:attribute name="categorie" type="xs:string" />
+    	</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="coureurs">
+    	<xs:complexType>
+   			<xs:sequence>
+				<xs:element ref="coureur" minOccurs="0" maxOccurs="unbounded" />
+   			</xs:sequence>
+   		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="coureur">
+    	<xs:complexType>
+    		<xs:simpleContent>
+    			<xs:extension base="xs:string">
+					<xs:attribute name="nom" type="xs:string" />
+					<xs:attribute name="prenom" type="xs:string" />
+					<xs:attribute name="sexe" type="xs:string" />
+				</xs:extension>
+			</xs:simpleContent>
+   		</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:element name="epreuves">
+    	<xs:complexType>
+   			<xs:sequence>
+				<xs:element ref="epreuve" minOccurs="0" maxOccurs="unbounded" />
+   			</xs:sequence>
+   		</xs:complexType>
+		
+	</xs:element>
+	<xs:element name="epreuve">
+    	<xs:complexType>
+   			<xs:sequence>
+   				<xs:element name="nom" type="xs:string" />
+   				<xs:element ref="parcourss" minOccurs="0" />
+   			</xs:sequence>
+   			
+			<xs:attribute name="id" type="xs:int" />
+			<xs:attribute name="categorie" type="xs:string" />
+			<xs:attribute name="ordre" type="xs:int" />
+			<xs:attribute name="typeEpreuve" type="xs:string" />
+			<xs:attribute name="depart" type="xs:string" />
+			<xs:attribute name="heureDepart" type="xs:time" />
+			<xs:attribute name="heureDepart2" type="xs:time" />
+			<xs:attribute name="enLigne" type="xs:boolean" />
+			<xs:attribute name="jour" type="xs:int" />
+			<xs:attribute name="coef" type="xs:int" />
+			<xs:attribute name="departage" type="xs:boolean" />
+			<xs:attribute name="limiteType" type="xs:string" />
+			<xs:attribute name="limiteHeure" type="xs:time" />
+			<xs:attribute name="limitePoints" type="xs:int" />
+			<xs:attribute name="limiteMnPenalite" type="xs:time" />
+			<xs:attribute name="limiteMnPar" type="xs:time" />
+			
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="parcourss">
+    	<xs:complexType>
+   			<xs:sequence>
+   				<xs:element ref="parcours" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="parcours">
+    	<xs:complexType>
+   			<xs:sequence>
+    			<xs:element name="nom" type="xs:string" />
+    			<xs:element ref="balises" minOccurs="0" />
+   			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="balises">
+    	<xs:complexType>
+   			<xs:sequence>
+   				<xs:element ref="balise" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="balise">
+    	<xs:complexType>
+   			<xs:sequence>
+   				<xs:element name="code" type="xs:int" />
+   				<xs:element name="trouveBonif" type="xs:boolean" />
+   				<xs:element name="trouvePoints" type="xs:int" />
+   				<xs:element name="trouveHeure" type="xs:time" />
+   				<xs:element name="pmBonif" type="xs:boolean" />
+   				<xs:element name="pmPoints" type="xs:int" />
+   				<xs:element name="pmHeure" type="xs:time" />
+   			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="tempss">
+    	<xs:complexType>
+   			<xs:sequence>
+				<xs:element ref="temps" minOccurs="0" maxOccurs="unbounded" />
+   			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="temps">
+    	<xs:complexType>
+   			<xs:sequence>
+   				<xs:element name="puce" type="xs:string" />
+   				<xs:element name="jour" type="xs:int" />
+   				<xs:element name="depart" type="xs:long" />
+   				<xs:element name="arrive" type="xs:long" />
+				<xs:element ref="tempsBalises" minOccurs="0" />
+   			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="tempsBalises">
+    	<xs:complexType>
+   			<xs:sequence>
+   				<xs:element  ref="tempsBalise" minOccurs="0" maxOccurs="unbounded"  />
+   			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="tempsBalise">
+    	<xs:complexType>
+   			<xs:sequence>
+   				<xs:element name="code" type="xs:int" />
+   				<xs:element name="temps" type="xs:long" />
+   			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>
