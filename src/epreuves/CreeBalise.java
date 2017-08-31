@@ -67,6 +67,7 @@ public class CreeBalise extends JDialog {
 
 	public CreeBalise(Balise pBalise) {
 		balise = pBalise;
+		System.out.println(balise.getTrouveBonif() + " - " + balise.getTrouvePoints());
 		Initialise();
 	}
 

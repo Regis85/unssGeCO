@@ -44,12 +44,12 @@ public class NouvelleEpreuve extends JDialog {
 	protected JPanel panel_texte = new JPanel();
 	protected JPanel panel_depart2 = new JPanel();
 	protected JPanel panel_heureDepart = new JPanel();
-	protected JPanel panel_dureeMax = new JPanel();
-	protected JPanel panel_HeureMax = new JPanel();
+	protected JPanel panel_HoraireMax = new JPanel();
 	
 	protected JTextField txtNomEpreuve;
 	
 	protected JLabel lblTexteIntroduction = new JLabel("texte");
+	protected JLabel lblLimiteHoraire = new JLabel("Limite horaire : ");
 	
 	protected JComboBox<Object> cbx_Type = new JComboBox<Object>(new Object[]{TypeEpreuve.groupe,TypeEpreuve.relais,TypeEpreuve.reseau});
 	protected JComboBox<Object> cbx_depart = new JComboBox<Object>(new Object[]{TypeDepart.Groupé.intitule(),TypeDepart.Boitier.intitule()});
@@ -59,11 +59,6 @@ public class NouvelleEpreuve extends JDialog {
 	protected JSpinner spinner_mnDepart = new JSpinner();
 	protected JSpinner spinner_depart2H = new JSpinner();
 	protected JSpinner spinner_depart2Mn = new JSpinner();
-	protected JSpinner spinner_dureeMaxH = new JSpinner();
-	protected JSpinner spinner_dureeMaxMn = new JSpinner();
-	protected JSpinner spinner_dureeMaxPoints = new JSpinner();
-	protected JSpinner spinner_dureeMaxPlusMn = new JSpinner();
-	protected JSpinner spinner_dureeMaxPar = new JSpinner();
 	protected JSpinner spinner_heureMaxH = new JSpinner();
 	protected JSpinner spinner_heureMaxPoint = new JSpinner();
 	protected JSpinner spinner_heureMaxMnPlus = new JSpinner();
@@ -361,177 +356,91 @@ public class NouvelleEpreuve extends JDialog {
 				panel.add(cbx_limite, gbc_cbx_limite);
 			}
 			{
-				{
-					panel_dureeMax.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
-					panel_dureeMax.setVisible(false);
-					
-					panel_dureeMax.setPreferredSize(new Dimension(20, 10));
-					panel_dureeMax.setMinimumSize(new Dimension(20, 10));
-					GridBagConstraints gbc_panel_dureeMax = new GridBagConstraints();
-					gbc_panel_dureeMax.gridwidth = 3;
-					gbc_panel_dureeMax.insets = new Insets(0, 0, 5, 0);
-					gbc_panel_dureeMax.fill = GridBagConstraints.BOTH;
-					gbc_panel_dureeMax.gridx = 0;
-					gbc_panel_dureeMax.gridy = 8;
-					panel.add(panel_dureeMax, gbc_panel_dureeMax);
-					panel_dureeMax.setLayout(new BorderLayout(0, 0));
-					{
-						JPanel panel_dm1 = new JPanel();
-						panel_dureeMax.add(panel_dm1, BorderLayout.NORTH);
-						panel_dm1.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
-						{
-							JLabel lblDureMaximum = new JLabel("Durée maximum :");
-							lblDureMaximum.setAlignmentX(Component.RIGHT_ALIGNMENT);
-							panel_dm1.add(lblDureMaximum);
-						}
-						{
-							spinner_dureeMaxH.setModel(new SpinnerNumberModel(0, null, 23, 1));
-							//JSpinner spinner_dureeMaxH = new JSpinner();
-							spinner_dureeMaxH.setPreferredSize(new Dimension(40, 20));
-							spinner_dureeMaxH.setMinimumSize(new Dimension(40, 20));
-							panel_dm1.add(spinner_dureeMaxH);
-						}
-						{
-							JLabel lblH_2 = new JLabel("H");
-							panel_dm1.add(lblH_2);
-						}
-						{
-							spinner_dureeMaxMn.setModel(new SpinnerNumberModel(0, null, 59, 1));
-							//JSpinner spinner_dureeMaxMn = new JSpinner();
-							spinner_dureeMaxMn.setMinimumSize(new Dimension(40, 20));
-							spinner_dureeMaxMn.setPreferredSize(new Dimension(40, 20));
-							panel_dm1.add(spinner_dureeMaxMn);
-						}
-						{
-							JLabel lblMn_2 = new JLabel("MN");
-							panel_dm1.add(lblMn_2);
-						}
-					}
-					{
-						JPanel panel_dm2 = new JPanel();
-						panel_dm2.setAlignmentY(Component.TOP_ALIGNMENT);
-						panel_dureeMax.add(panel_dm2, BorderLayout.CENTER);
-						panel_dm2.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
-						{
-							JLabel lblMoins = new JLabel("Moins");
-							panel_dm2.add(lblMoins);
-						}
-						{
-							//JSpinner spinner_dureeMaxPoints = new JSpinner();
-							spinner_dureeMaxPoints.setPreferredSize(new Dimension(40, 20));
-							spinner_dureeMaxPoints.setMinimumSize(new Dimension(40, 20));
-							panel_dm2.add(spinner_dureeMaxPoints);
-						}
-						{
-							JLabel lblEnMoins = new JLabel("points et plus");
-							panel_dm2.add(lblEnMoins);
-						}
-						{
-							//JSpinner spinner_dureeMaxPlusMn = new JSpinner();
-							spinner_dureeMaxPlusMn.setMinimumSize(new Dimension(40, 20));
-							spinner_dureeMaxPlusMn.setPreferredSize(new Dimension(40, 20));
-							panel_dm2.add(spinner_dureeMaxPlusMn);
-						}
-						{
-							JLabel lblMnPar = new JLabel("mn par");
-							panel_dm2.add(lblMnPar);
-						}
-						{
-							//JSpinner spinner_dureeMaxPar = new JSpinner();
-							spinner_dureeMaxPar.setPreferredSize(new Dimension(40, 20));
-							spinner_dureeMaxPar.setMinimumSize(new Dimension(40, 20));
-							panel_dm2.add(spinner_dureeMaxPar);
-						}
-						{
-							JLabel lblMn_3 = new JLabel("mn de dépassement");
-							panel_dm2.add(lblMn_3);
-						}
-					}
-				}
 
-				GridBagConstraints gbc_panel_HeureMax = new GridBagConstraints();
-				gbc_panel_HeureMax.gridwidth = 3;
-				gbc_panel_HeureMax.fill = GridBagConstraints.BOTH;
-				gbc_panel_HeureMax.gridx = 0;
-				gbc_panel_HeureMax.gridy = 9;
-				panel_HeureMax.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
-				panel_HeureMax.setVisible(false);
-				panel.add(panel_HeureMax, gbc_panel_HeureMax);
-				panel_HeureMax.setLayout(new BorderLayout(0, 0));
+				GridBagConstraints gbc_panel_HoraireMax = new GridBagConstraints();
+				gbc_panel_HoraireMax.insets = new Insets(0, 0, 5, 0);
+				gbc_panel_HoraireMax.gridwidth = 3;
+				gbc_panel_HoraireMax.fill = GridBagConstraints.BOTH;
+				gbc_panel_HoraireMax.gridx = 0;
+				gbc_panel_HoraireMax.gridy = 8;
+				panel_HoraireMax.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
+				panel_HoraireMax.setVisible(false);
+				panel.add(panel_HoraireMax, gbc_panel_HoraireMax);
+				panel_HoraireMax.setLayout(new BorderLayout(0, 0));
 				
 				
 			}
-		}
-		{
-			JPanel panel_hm1 = new JPanel();
-			panel_HeureMax.add(panel_hm1, BorderLayout.NORTH);
-			
+			{
+				JPanel panel_hm1 = new JPanel();
+				panel_HoraireMax.add(panel_hm1, BorderLayout.NORTH);
+				
 
-			{
-				JLabel lblLimiteHoraire = new JLabel("Limite horaire : ");
-				panel_hm1.add(lblLimiteHoraire);
-			}
-			{
-				spinner_heureMaxH.setModel(new SpinnerNumberModel(0, null, 23, 1));
-				//JSpinner spinner_heureMaxH = new JSpinner();
-				spinner_heureMaxH.setPreferredSize(new Dimension(40, 20));
-				spinner_heureMaxH.setMinimumSize(new Dimension(40, 20));
-				panel_hm1.add(spinner_heureMaxH);
-			}
-			{
-				JLabel lblH_1 = new JLabel("H");
-				panel_hm1.add(lblH_1);
-			}
 				{
-					spinner_heureMaxMn.setModel(new SpinnerNumberModel(0, null, 59, 1));
-					//JSpinner spinner_heureMaxMn = new JSpinner();
-					spinner_heureMaxMn.setPreferredSize(new Dimension(40, 20));
-					spinner_heureMaxMn.setMinimumSize(new Dimension(40, 20));
-					panel_hm1.add(spinner_heureMaxMn);
+					//JLabel lblLimiteHoraire = new JLabel("Limite horaire : ");
+					panel_hm1.add(lblLimiteHoraire);
 				}
 				{
-					JLabel lblMn_1 = new JLabel("MN");
-					panel_hm1.add(lblMn_1);
+					spinner_heureMaxH.setModel(new SpinnerNumberModel(0, null, 23, 1));
+					//JSpinner spinner_heureMaxH = new JSpinner();
+					spinner_heureMaxH.setPreferredSize(new Dimension(40, 20));
+					spinner_heureMaxH.setMinimumSize(new Dimension(40, 20));
+					panel_hm1.add(spinner_heureMaxH);
 				}
-		}
-		{
-			JPanel panel_hm2 = new JPanel();
-			panel_hm2.setAlignmentY(Component.TOP_ALIGNMENT);
-			panel_HeureMax.add(panel_hm2, BorderLayout.CENTER);
-			panel_hm2.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
-			{
-				JLabel lblMoins_1 = new JLabel("Moins");
-				panel_hm2.add(lblMoins_1);
+				{
+					JLabel lblH_1 = new JLabel("H");
+					panel_hm1.add(lblH_1);
+				}
+					{
+						spinner_heureMaxMn.setModel(new SpinnerNumberModel(0, null, 59, 1));
+						//JSpinner spinner_heureMaxMn = new JSpinner();
+						spinner_heureMaxMn.setPreferredSize(new Dimension(40, 20));
+						spinner_heureMaxMn.setMinimumSize(new Dimension(40, 20));
+						panel_hm1.add(spinner_heureMaxMn);
+					}
+					{
+						JLabel lblMn_1 = new JLabel("MN");
+						panel_hm1.add(lblMn_1);
+					}
 			}
 			{
+				JPanel panel_hm2 = new JPanel();
+				panel_hm2.setAlignmentY(Component.TOP_ALIGNMENT);
+				panel_HoraireMax.add(panel_hm2, BorderLayout.CENTER);
+				panel_hm2.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+				{
+					JLabel lblMoins_1 = new JLabel("Moins");
+					panel_hm2.add(lblMoins_1);
+				}
+				{
 //				JSpinner spinner_heureMaxPoint = new JSpinner();
-				spinner_heureMaxPoint.setPreferredSize(new Dimension(40, 20));
-				spinner_heureMaxPoint.setMinimumSize(new Dimension(40, 20));
-				panel_hm2.add(spinner_heureMaxPoint);
-			}
-			{
-				JLabel lblPointsEtPlus = new JLabel("points et plus");
-				panel_hm2.add(lblPointsEtPlus);
-			}
-			{
-				//JSpinner spinner_heureMaxMnPlus = new JSpinner();
-				spinner_heureMaxMnPlus.setPreferredSize(new Dimension(40, 20));
-				spinner_heureMaxMnPlus.setMinimumSize(new Dimension(40, 20));
-				panel_hm2.add(spinner_heureMaxMnPlus);
-			}
-			{
-				JLabel lblMnPar_1 = new JLabel("mn par");
-				panel_hm2.add(lblMnPar_1);
-			}
-			{
-				//JSpinner spinner_heureMaxMnPar = new JSpinner();
-				spinner_heureMaxMnPar.setMinimumSize(new Dimension(40, 20));
-				spinner_heureMaxMnPar.setPreferredSize(new Dimension(40, 20));
-				panel_hm2.add(spinner_heureMaxMnPar);
-			}
-			{
-				JLabel lblMn_4 = new JLabel("mn de dépassement");
-				panel_hm2.add(lblMn_4);
+					spinner_heureMaxPoint.setPreferredSize(new Dimension(40, 20));
+					spinner_heureMaxPoint.setMinimumSize(new Dimension(40, 20));
+					panel_hm2.add(spinner_heureMaxPoint);
+				}
+				{
+					JLabel lblPointsEtPlus = new JLabel("points et plus");
+					panel_hm2.add(lblPointsEtPlus);
+				}
+				{
+					//JSpinner spinner_heureMaxMnPlus = new JSpinner();
+					spinner_heureMaxMnPlus.setPreferredSize(new Dimension(40, 20));
+					spinner_heureMaxMnPlus.setMinimumSize(new Dimension(40, 20));
+					panel_hm2.add(spinner_heureMaxMnPlus);
+				}
+				{
+					JLabel lblMnPar_1 = new JLabel("mn par");
+					panel_hm2.add(lblMnPar_1);
+				}
+				{
+					//JSpinner spinner_heureMaxMnPar = new JSpinner();
+					spinner_heureMaxMnPar.setMinimumSize(new Dimension(40, 20));
+					spinner_heureMaxMnPar.setPreferredSize(new Dimension(40, 20));
+					panel_hm2.add(spinner_heureMaxMnPar);
+				}
+				{
+					JLabel lblMn_4 = new JLabel("mn de dépassement");
+					panel_hm2.add(lblMn_4);
+				}
 			}
 		}
 		{
@@ -601,20 +510,22 @@ public class NouvelleEpreuve extends JDialog {
 	protected void limiteChange(ActionEvent e) {
 		switch(cbx_limite.getSelectedIndex()) {
 			case 0 : 
-				panel_HeureMax.setVisible(false);
-				panel_dureeMax.setVisible(false);
+				panel_HoraireMax.setVisible(false);
+				//panel_dureeMax.setVisible(false);
 				break;
 			case 1 :
-				panel_HeureMax.setVisible(false);
-				panel_dureeMax.setVisible(true);
+				panel_HoraireMax.setVisible(true);
+				lblLimiteHoraire.setText("durée maximale");
+				//panel_dureeMax.setVisible(true);
 			break;
 			case 2 : 
-				panel_HeureMax.setVisible(true);
-				panel_dureeMax.setVisible(false);
+				panel_HoraireMax.setVisible(true);
+				lblLimiteHoraire.setText("Limite horaire");
+				//panel_dureeMax.setVisible(false);
 			break;
 			default : 
-				panel_HeureMax.setVisible(false);
-				panel_dureeMax.setVisible(false);
+				panel_HoraireMax.setVisible(false);
+				//panel_dureeMax.setVisible(false);
 		}
 		
 	}
@@ -644,12 +555,12 @@ public class NouvelleEpreuve extends JDialog {
 		epreuve.setHeureDepart(heure(Integer.parseInt(spinner_hDepart.getValue().toString()), Integer.parseInt(spinner_mnDepart.getValue().toString())));
 		epreuve.setHeureDepart2(heure(Integer.parseInt(spinner_depart2H.getValue().toString()), Integer.parseInt(spinner_depart2Mn.getValue().toString())));
 		epreuve.setTypeLimite(cbx_limite.getSelectedItem().toString());
-		
+		/*
 		epreuve.setDureeMaxi(heure(Integer.parseInt(spinner_dureeMaxH.getValue().toString()),Integer.parseInt(spinner_dureeMaxMn.getValue().toString())));
 		epreuve.setPointsDureeMaxi(Integer.parseInt(spinner_dureeMaxPoints.getValue().toString()));
 		epreuve.setPenaliteDureeMaxi(heure(0, Integer.parseInt(spinner_dureeMaxPlusMn.getValue().toString())));
 		epreuve.setParDureeMaxi(heure(0, Integer.parseInt(spinner_dureeMaxPar.getValue().toString())));
-				
+		*/
 		epreuve.setHeureMaxi(heure(Integer.parseInt(spinner_heureMaxH.getValue().toString()),Integer.parseInt(spinner_heureMaxMn.getValue().toString())));
 		epreuve.setPointsHeureMaxi(Integer.parseInt(spinner_heureMaxPoint.getValue().toString()));
 		epreuve.setPenaliteHeureMaxi(heure(0, Integer.parseInt(spinner_heureMaxMnPlus.getValue().toString())));

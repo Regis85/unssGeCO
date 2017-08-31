@@ -144,6 +144,10 @@ public class Relais extends JDialog {
 		return retour;
 	}
 	
+	public void setNom(String pNomRelais) {
+		txtNomrelais.setText(pNomRelais);
+	}
+	
 	public String getNom() {
 		this.setVisible(true);
 		return retourClasse;

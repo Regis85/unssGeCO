@@ -568,6 +568,7 @@ public class Fenetre {
 						panel_parcours.setVisible(true);
 					}
 					panel_balises.setVisible(true);
+					afficheBalises();
 		    	}
 		    	
 		    }
@@ -650,6 +651,7 @@ public class Fenetre {
 		panel_parcours.add(comboBox_parcours);
 		
 		JButton btnNouveauparcours = new JButton("");
+		btnNouveauparcours.setToolTipText("Ajouter un parcours");
 		btnNouveauparcours.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				ajouteParcours();
@@ -657,6 +659,7 @@ public class Fenetre {
 		});
 		
 		JButton btnImportparcours = new JButton("");
+		btnImportparcours.setToolTipText("Imprter les parcours à partir d'un fichier .csv");
 		btnImportparcours.setPreferredSize(new Dimension(33, 33));
 		btnImportparcours.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/import.png")));
 		btnImportparcours.addActionListener(new ActionListener() {
@@ -671,10 +674,10 @@ public class Fenetre {
 		panel_parcours.add(btnNouveauparcours);
 		
 		JButton btnModifieparcours = new JButton("");
-		btnModifieparcours.setToolTipText("Modifier le relais");
+		btnModifieparcours.setToolTipText("Modifier le parcours sélectionné");
 		btnModifieparcours.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				modifieRelais();
+				modifieParcours();
 			}
 		});
 		btnModifieparcours.setPreferredSize(new Dimension(30, 30));
@@ -683,6 +686,7 @@ public class Fenetre {
 		panel_parcours.add(btnModifieparcours);
 		
 		JButton btnSupprimeparcours = new JButton("");
+		btnSupprimeparcours.setToolTipText("Supprimer le parcours sélectionné");
 		btnSupprimeparcours.setPreferredSize(new Dimension(30, 30));
 		btnSupprimeparcours.setMinimumSize(new Dimension(30, 30));
 		btnSupprimeparcours.setIcon(new ImageIcon(Fenetre.class.getResource("/icones/delete.png")));
@@ -1056,7 +1060,7 @@ public class Fenetre {
 				frmCoUnss.repaint();
 			}
 
-			//afficheBalises();
+			afficheBalises();
 			
 		}
 	}
@@ -1105,12 +1109,16 @@ public class Fenetre {
 		chooser.setFileFilter(filter);
 		chooser.addChoosableFileFilter(filter2);
 		chooser.setCurrentDirectory(new File(preferences.getDossierTravail()));
-		equipes = new Vector<Equipe>();
-		epreuves = new Vector<Epreuve>();
 		if(chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION){
+			equipes = new Vector<Equipe>();
+			epreuves = new Vector<Epreuve>();
+	        if(preferences == null) {
+	        	preferences = new Preferences();
+	        } 		
 			preferences.setFichierTravail(chooser.getSelectedFile().getAbsolutePath());
             new ChargeFichier(preferences, equipes, epreuves, chooser.getSelectedFile().getAbsolutePath());
             afficheTout();
+            comboBoxEtapes.setSelectedIndex(0);
         }
 	}
 	
@@ -1221,6 +1229,7 @@ public class Fenetre {
 	}
 	
 	protected void setBaliseDefaut() {
+		System.out.println(preferences.getBaliseDefaut().getTrouveBonif() + " * " + preferences.getBaliseDefaut().getTrouvePoints());
 		CreeBalise dialog = new CreeBalise(preferences.getBaliseDefaut());
 		dialog.setTitle("Balise par défaut");
 		dialog.setLocationRelativeTo(null);
@@ -1230,11 +1239,17 @@ public class Fenetre {
 	/**
 	 * Modification d'un parcours
 	 */
-	protected void modifieRelais() {
-		System.out.println("On modifie un parcours du relais");
+	protected void modifieParcours() {
 		if(comboBox_parcours.getSelectedIndex() != -1) {
-			new MonRelais(comboBoxEtapes.getSelectedItem().toString(), Categorie.valueOfByCategorie(comboBoxCategories.getSelectedItem().toString()));
-			
+			System.out.println("On modifie le parcours " + comboBox_parcours.getSelectedIndex());
+			int index = comboBox_parcours.getSelectedIndex();
+			//MonRelais modRelais = new MonRelais(comboBoxEtapes.getSelectedItem().toString(), Categorie.valueOfByCategorie(comboBoxCategories.getSelectedItem().toString()));
+			String newParcours = new MonRelais(comboBoxEtapes.getSelectedItem().toString(), Categorie.valueOfByCategorie(comboBoxCategories.getSelectedItem().toString())).getNom();
+			if (newParcours != null) {
+				parcoursActif(epreuveSelectionnee()).setNom(newParcours);
+				afficheEpreuves();
+				comboBox_parcours.setSelectedIndex(index);
+			}
 		}
 	}
 	
@@ -1264,10 +1279,8 @@ public class Fenetre {
 	 */
 	protected Parcours parcoursActif(Epreuve epv) {
 		Parcours retour = null; 
-		//for (Epreuve epv : epreuves) {
-			//if (epv.getNom().toUpperCase().equals(comboBoxEtapes.getSelectedItem().toString().toUpperCase())) {
 		for(Parcours parc : epv.getParcours()) {
-			if(parc.getNom().toUpperCase().equals(comboBox_parcours.getSelectedItem().toString().toUpperCase())) {
+			if((parc.getNom() != null) && (comboBox_parcours.getSelectedIndex() != -1) && (parc.getNom().toUpperCase().equals(comboBox_parcours.getSelectedItem().toString().toUpperCase()))) {
 				retour = parc;
 				break;
 			}
@@ -1281,6 +1294,7 @@ public class Fenetre {
 			Parcours parc = parcoursActif(epreuveSelectionnee());
 			retour = parc.getBalises();
 		}
+		
 		return retour;
 	}
 	
@@ -1333,6 +1347,10 @@ public class Fenetre {
 		
 		MonRelais(String pNom, Categorie pCategorie){
 			super(pNom, pCategorie);
+			System.out.println("mon relais");
+			this.setNom(comboBox_parcours.getSelectedItem().toString());
+			this.setLocationRelativeTo(null);
+			this.setModal(true);
 		}
 		
 	}

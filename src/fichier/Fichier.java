@@ -144,29 +144,23 @@ public class Fichier implements SaveFichierXML  {
 				elEpreuve.appendChild(elNom);
 				
 				elEpreuve.setAttribute("id",String.valueOf(epv.getId()));
-				elEpreuve.setAttribute("categorie",String.valueOf(epv.getCategorie()));
 				elEpreuve.setAttribute("ordre",String.valueOf(epv.getNumOrdre()));
+				elEpreuve.setAttribute("categorie",String.valueOf(epv.getCategorie()));
 				elEpreuve.setAttribute("typeEpreuve",epv.getType().toString());
-				elEpreuve.setAttribute("depart",String.valueOf(epv.getTypeDepart()));
+				//elEpreuve.setAttribute("active",String.valueOf(epv.getActive()));
+				elEpreuve.setAttribute("depart",String.valueOf(epv.getTypeDepart().intitule()));
 				elEpreuve.setAttribute("heureDepart",String.valueOf(epv.getHeureDepart().format(DateTimeFormatter.ISO_LOCAL_TIME)));
 				elEpreuve.setAttribute("heureDepart2",String.valueOf(epv.getHeureDepart2()) + ":00");
 				elEpreuve.setAttribute("enLigne",String.valueOf(epv.getEnLigne()));
 				elEpreuve.setAttribute("jour",String.valueOf(epv.getJour()));
-				//elEpreuve.setAttribute("apresSuivante",String.valueOf(epv.getApresPrecedente()));
 				elEpreuve.setAttribute("coef",String.valueOf(epv.getCoef()));
 				elEpreuve.setAttribute("departage",String.valueOf(epv.getDepartage()));
 				elEpreuve.setAttribute("limiteType",String.valueOf(epv.getTypeLimite()));
-				if (epv.getTypeLimite().equals(TypeLimite.heure)) {
+				if (epv.getTypeLimite().equals(TypeLimite.heure) || epv.getTypeLimite().equals(TypeLimite.temps)) {
 					elEpreuve.setAttribute("limiteHeure",String.valueOf(epv.getHeureMaxi().format(DateTimeFormatter.ISO_LOCAL_TIME)));
 					elEpreuve.setAttribute("limitePoints",String.valueOf(epv.getPointsHeureMaxi()));
 					elEpreuve.setAttribute("limiteMnPenalite",String.valueOf(epv.getPenaliteHeureMaxi().format(DateTimeFormatter.ISO_LOCAL_TIME)));
 					elEpreuve.setAttribute("limiteMnPar",String.valueOf(epv.getParHeureMaxi().format(DateTimeFormatter.ISO_LOCAL_TIME)));
-				}
-				else if (epv.getTypeLimite().equals(TypeLimite.temps)) {
-					elEpreuve.setAttribute("limiteHeure",String.valueOf(epv.getDureeMaxi().format(DateTimeFormatter.ISO_LOCAL_TIME)));
-					elEpreuve.setAttribute("limitePoints",String.valueOf(epv.getPointsDureeMaxi()));
-					elEpreuve.setAttribute("limiteMnPenalite",String.valueOf(epv.getPenaliteDureeMaxi().format(DateTimeFormatter.ISO_LOCAL_TIME)));
-					elEpreuve.setAttribute("limiteMnPar",String.valueOf(epv.getParDureeMaxi().format(DateTimeFormatter.ISO_LOCAL_TIME)));
 				}
 	        	
 				Element elParcourss = docCo.createElement("parcourss");

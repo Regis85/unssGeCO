@@ -23,13 +23,13 @@ public class Epreuve {
 	protected int pointsDureeMaxi;
 	protected int pointsHeureMaxi;
 	
-	protected LocalTime dureeMaxi;
+	//protected LocalTime dureeMaxi;
 	protected LocalTime heureDepart;
 	protected LocalTime heureDepart2;
 	protected LocalTime heureMaxi;
-	protected LocalTime parDureeMaxi;
+	//protected LocalTime parDureeMaxi;
 	protected LocalTime parHeureMaxi;
-	protected LocalTime penaliteDureeMaxi;
+	//protected LocalTime penaliteDureeMaxi;
 	protected LocalTime penaliteHeureMaxi;
 	
 	protected String nom;
@@ -218,73 +218,87 @@ public class Epreuve {
 	 * 
 	 * @param pDureeMaxi LocalTime
 	 */
+	/*
 	public void setDureeMaxi(LocalTime pDureeMaxi) {
 		dureeMaxi = pDureeMaxi;
 	}
+	*/
 	
 	/**
 	 * Retourne la durée maximale de l'épreuve
 	 * 
 	 * @return LocalTime
 	 */
+	/*
 	public LocalTime getDureeMaxi() {
 		return dureeMaxi;
 	}
+	*/
 	
 	/**
 	 * Affecte le nombre de points de pénalité en cas de dépassement de la durée maximale de l'épreuve
 	 * 
 	 * @param pPointsDureeMaxi int
 	 */
+	/*
 	public void setPointsDureeMaxi(int pPointsDureeMaxi) {
 		pointsDureeMaxi = pPointsDureeMaxi;
 	}
+	*/
 	
 	/**
 	 * Retourne le nombre de points de pénalité en cas de dépassement de la durée maximale de l'épreuve
 	 * 
 	 * @return int
 	 */
+	/*
 	public int getPointsDureeMaxi() {
 		return pointsDureeMaxi;
 	}
+	*/
 	
 	/**
 	 * Affecte le nombre de minutes de pénalité en cas de dépassement de la durée maximale de l'épreuve
 	 * 
 	 * @param LocalTime
 	 */
+	/*
 	public void setPenaliteDureeMaxi(LocalTime pPenaliteDureeMaxi) {
 		penaliteDureeMaxi = pPenaliteDureeMaxi;
 	}
+	*/
 	
 	/**
 	 * Retourne le nombre de minutes de pénalité en cas de dépassement de la durée maximale de l'épreuve
 	 * 
 	 * @return LocalTime
 	 */
+	/*
 	public LocalTime getPenaliteDureeMaxi() {
 		return penaliteDureeMaxi;
 	}
+	*/
 
 	/**
 	 * durée maximale de l'épreuve : affecte le nombre de minutes qui déclenche une pénalité
 	 * 
 	 * @param pParDureeMaxi
 	 */
+	/*
 	public void setParDureeMaxi(LocalTime pParDureeMaxi) {
 		parDureeMaxi = pParDureeMaxi;
 	}
-
+*/
 	/**
 	 * durée maximale de l'épreuve : retourne le nombre de minutes qui déclenche une pénalité
 	 * 
 	 * @return LocalTime
 	 */
+	/*
 	public LocalTime getParDureeMaxi() {
 		return parDureeMaxi;
 	}
-	
+	*/
 	/**
 	 * Affecte l'heure maximale de l'épreuve
 	 * 
